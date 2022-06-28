@@ -6,9 +6,14 @@
 }
 
 body{
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(22, 22, 22);
     color: #fff;
     font-family: 'Roboto', sans-serif;
+}
+
+#intro-pag{
+    background-color: rgb(32, 32, 32);
+    
 }
 
 #intro-pag p{
@@ -19,6 +24,52 @@ body{
 
 h1{
     text-align: center;
-    padding: 4% 0 2% 0;
-    font-size: 50px
+    padding: 8% 0;
+    font-size: 70px
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+    font-size: 25px;
+    padding: 1% 4%;
+    margin: 2% 0 0 0;
+    border: 0 0 4px 0;
+    border-bottom: rgb(32, 32, 32) solid;
+}
+
+a:hover{
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+    border: 0 0 4px 0;
+    border-bottom: blue solid;
+}
+
+.conteudo-padrao{
+    margin: 20%;
+    display: flex;
+}
+
+h2{
+    padding: 20px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color:rgb(180, 180, 180);
+    border-radius: 10px;
 }
