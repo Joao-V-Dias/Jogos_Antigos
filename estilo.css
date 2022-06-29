@@ -1,75 +1,180 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color: rgb(22, 22, 22);
+body {
+    background-color: rgb(19, 19, 19);
     color: #fff;
     font-family: 'Roboto', sans-serif;
 }
 
-#intro-pag{
+#intro-pag {
     background-color: rgb(32, 32, 32);
-    
 }
 
-#intro-pag p{
+#intro-pag p {
     text-align: center;
-    padding: 2% 20%;
-    font-size: 20px;
+    padding: 0 20% 1% 20%;
+    font-size: 15px;
+    color: rgb(161, 161, 161);
 }
 
-h1{
+h1 {
     text-align: center;
-    padding: 8% 0;
+    padding: 4% 0;
     font-size: 70px
 }
 
-ul{
+#intro-pag h2 {
+    display: none;
+}
+
+ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(180, 180, 180);
     font-size: 25px;
     padding: 1% 4%;
-    margin: 2% 0 0 0;
-    border: 0 0 4px 0;
-    border-bottom: rgb(32, 32, 32) solid;
+    margin: 0;
 }
 
-a:hover{
-    background-color: rgb(20, 20, 20);
+
+
+
+.conteudo-padrao {
+    position: relative;
+    margin: 5% 0;
+    width: 70%;
+    height: 300px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+
+.conteudo-padrao img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.conteudo-padrao h2 {
+    padding: 2%;
+    top: 0;
+}
+
+/*Space Invaders*/
+
+#space_invaders {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgb(224, 222, 222);
+}
+
+/*Pac Man*/
+
+#pac_man h2 {
+    position: absolute;
+    right: 50%;
+}
+
+#pac_man p {
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(224, 222, 222);
+}
+
+#pac_man img {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    right: 0%;
+    top: 0;
+}
+
+/*Donkey Kong*/
+
+#donkey_kong h2 {
+    position: absolute;
+    left: 50%;
+}
+
+#donkey_kong p {
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(224, 222, 222);
+}
+
+#donkey_kong img {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+h2 {
+    font-size: 40px;
     color: #fff;
-    border: 0 0 4px 0;
-    border-bottom: blue solid;
 }
 
-.conteudo-padrao{
-    margin: 20%;
-    display: flex;
+
+/*Super Mario*/
+
+#super_mario_bros p {
+    width: 60%;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    text-align: center;
+
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(224, 222, 222);
 }
 
-h2{
-    padding: 20px;
+#super_mario_bros img {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
-img{
-    width: 50px;
-    height: 50px;
+#super_mario_bros h2 {
+    right: 45%;
+    position: absolute;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 8px;
+
 }
 
-::-webkit-scrollbar-thumb{
-    background-color:rgb(180, 180, 180);
+::-webkit-scrollbar-thumb {
+    background-color: rgb(180, 180, 180);
     border-radius: 10px;
 }
