@@ -7,17 +7,17 @@
 }
 
 body {
-    background-color: #111111;
+    background-color: RGB(18, 18, 18);
 }
 
 #intro-pag {
-    background-color: rgb(29, 29, 29);
+    background-color: RGB(42, 42, 42);
     color: #fff;
 }
 
 #intro-pag p {
     text-align: center;
-    padding: 0 20% 1% 20%;
+    padding: 0 20%;
     font-size: 15px;
     color: rgb(161, 161, 161);
 }
@@ -43,11 +43,10 @@ a {
     color: rgb(180, 180, 180);
     font-size: 25px;
     padding: 1% 4%;
-    margin: 0;
     border-bottom: 5px solid transparent;
 }
 
-a:hover{
+a:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(44, 44, 44);
     border-color: #2118C7;
@@ -64,25 +63,38 @@ a:hover{
 
 .conteudo-padrao h2 {
     position: absolute;
-    color: #D8DEBD;
+    color: rgb(233, 233, 233);
+    width: 40%;
+    right: 0;
+    padding: 2% 12%;
+    font-size: 40px;
 }
 
 .conteudo-padrao p {
-    color: #a5a4a4;
+    color: rgb(204, 204, 204);
     text-align: center;
     position: absolute;
+    padding: 6% 12%;
+    width: 40%;
+    right: 0;
+    bottom: 0;
+    font-size: 18px;
 }
 
 img {
     position: absolute;
+    top: 0;
     width: 400px;
     height: 400px;
     margin: 4% 15% 4% 15%;
     border: #2b2a2a solid 4px;
     border-radius: 5%;
     box-shadow:
-        12.5px 12.5px 10px rgba(0, 0, 0, 0.677),
-        100px 100px 80px rgba(0, 0, 0, 0.45);
+        3.3px 2.3px 3.6px rgba(0, 0, 0, 0.048),
+        9px 6.3px 10px rgba(0, 0, 0, 0.13),
+        21.7px 15.1px 24.1px rgba(0, 0, 0, 0.172),
+        72px 50px 80px rgba(0, 0, 0, 0.19);
+
 
 }
 
@@ -94,7 +106,6 @@ img {
     left: 50%;
     bottom: 0;
     transform: translate(-50%);
-    font-size: 18px;
 }
 
 #space_invaders h2 {
@@ -109,83 +120,127 @@ img {
 /*Pac Man*/
 
 #pac_man img {
-    top: 0;
     left: 0;
 }
 
-#pac_man p {
-    padding: 4% 12%;
-    width: 40%;
-    right: 0;
-    font-size: 18px;
-}
-
 #pac_man_part1 {
-    top: 18%;
+    top: 10%;
 }
 
 #pac_man_part2 {
     bottom: 5%;
 }
 
-#pac_man h2 {
-    width: 40%;
-    right: 0;
-    padding: 2% 12%;
-    font-size: 40px;
-}
-
 /*Donkey Kong*/
 
 
 #donkey_kong img {
-    top: 0;
     right: 0;
 }
 
 #donkey_kong p {
-    padding: 6% 12%;
-    width: 40%;
     left: 0;
-    bottom: 0;
-    font-size: 18px;
 }
 
 #donkey_kong h2 {
-    width: 40%;
     left: 0;
-    padding: 2% 12%;
-    font-size: 40px;
 }
 
 /*Super Mario Bros*/
 
 #super_mario_bros img {
-    top: 0;
     left: 0;
 }
 
 #super_mario_bros p {
-    padding: 3% 12% 9% 0;
-    width: 40%;
-    right: 0;
-    bottom: 0;
-    font-size: 18px;
+    bottom: 10%;
 }
 
-#super_mario_bros h2 {
-    width: 40%;
-    right: 0;
-    padding: 3% 12%;
-    font-size: 44px;
-}
-
-footer{
+footer {
     text-align: center;
     padding: 1%;
     height: 2%;
     color: #a5a4a4;
     background-color: rgb(29, 29, 29);
+}
+
+@media screen and (max-width: 1290px) {
+    body {
+        background-color: #2118C7;
+    }
+
+    #space_invaders h2 {
+        font-size: 40px;
+    }
+
+    .conteudo-padrao {
+        padding: 0;
+    }
+
+    .conteudo-padrao h2 {
+        padding: 1% 10%;
+        font-size: 35px;
+    }
+
+    .conteudo-padrao p {
+        padding: 2% 8%;
+        font-size: 15px;
+    }
+
+
+    img {
+        width: 350px;
+        height: 350px;
+        margin: 1% 12% 1% 12%;
+    }
+
+    #pac_man_part2 {
+        bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 935px) {
+    body {
+        background-color: #2118C7;
+    }
+
+    .conteudo-padrao {
+        padding: 0;
+    }
+
+    .conteudo-padrao h2 {
+        padding: 0 6%;
+        font-size: 30px;
+    }
+
+    .conteudo-padrao p {
+        padding: 1% 5%;
+        font-size: 10px;
+        bottom: 50%;
+    }
+
+
+    img {
+        width: 300px;
+        height: 300px;
+        margin: 0 11%;
+    }
+
+    #pac_man_part2 {
+        bottom: 50%;
+    }
+
+    #super_mario_bros p {
+        bottom: 50%;
+    }
+
+    #space_invaders p{
+        bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 935px){
+    
 }
 
 ::-webkit-scrollbar {
