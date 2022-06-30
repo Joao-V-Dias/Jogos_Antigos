@@ -7,19 +7,19 @@
 }
 
 body {
-    background-color: RGB(18, 18, 18);
+    background-color: rgb(53, 53, 53);
 }
 
 #intro-pag {
-    background-color: RGB(42, 42, 42);
-    color: #fff;
+    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(53, 53, 53));
+    color: #0015ff;
 }
 
 #intro-pag p {
     text-align: center;
     padding: 0 20%;
     font-size: 15px;
-    color: rgb(161, 161, 161);
+    color: rgb(184, 184, 184);
 }
 
 h1 {
@@ -29,7 +29,8 @@ h1 {
 }
 
 #intro-pag h2 {
-    display: none;
+    text-align: center;
+    margin: 1%;
 }
 
 ul {
@@ -49,7 +50,7 @@ a {
 a:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(44, 44, 44);
-    border-color: #2118C7;
+    border-color: #0015ff;
     transition-duration: 0.5s;
 }
 
@@ -63,7 +64,7 @@ a:hover {
 
 .conteudo-padrao h2 {
     position: absolute;
-    color: rgb(233, 233, 233);
+    color: #0015ff;
     width: 40%;
     right: 0;
     padding: 2% 12%;
@@ -101,18 +102,16 @@ img {
 /*Space Invaders*/
 
 #space_invaders p {
-    padding: 4% 7%;
+    position: static;
     width: 60%;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%);
+    margin: auto;
 }
 
 #space_invaders h2 {
+    margin: auto;
+    text-align: center;
+    position: static;
     width: 45%;
-    left: 50%;
-    top: 25%;
-    transform: translate(-50%);
     padding: 2% 7%;
     font-size: 55px;
 }
@@ -165,9 +164,6 @@ footer {
 }
 
 @media screen and (max-width: 1290px) {
-    body {
-        background-color: #2118C7;
-    }
 
     #space_invaders h2 {
         font-size: 40px;
@@ -200,9 +196,6 @@ footer {
 }
 
 @media screen and (max-width: 935px) {
-    body {
-        background-color: #2118C7;
-    }
 
     .conteudo-padrao {
         padding: 0;
@@ -234,13 +227,42 @@ footer {
         bottom: 50%;
     }
 
-    #space_invaders p{
+    #space_invaders p {
         bottom: 20%;
     }
 }
 
-@media screen and (max-width: 935px){
-    
+@media screen and (max-width: 935px) {
+    .conteudo-padrao {
+        position: static;
+        padding-bottom: 4%;
+    }
+
+    .conteudo-padrao h2 {
+        position: static;
+        margin: auto;
+        font-size: 35px;
+    }
+
+    .conteudo-padrao p {
+        position: static;
+        margin: auto;
+        width: 70%;
+    }
+
+    img {
+        position: static;
+        width: 200px;
+        height: 200px;
+    }
+
+    #space_invaders p {
+        position: static;
+        padding: 0;
+        width: 70%;
+        margin: auto;
+    }
+
 }
 
 ::-webkit-scrollbar {
