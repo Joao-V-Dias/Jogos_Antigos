@@ -1,36 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
-    margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
-body {
-    background-color: rgb(53, 53, 53);
+body{
+    background-color: #0d1c2c;
 }
+
+#intro-pag h2{font-size: 1.610541727672035vw;}
 
 #intro-pag {
-    background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(53, 53, 53));
-    color: #0015ff;
-}
-
-#intro-pag p {
+    width: 100vw;
+    height: auto;
     text-align: center;
-    padding: 0 20%;
-    font-size: 15px;
-    color: rgb(184, 184, 184);
+    background-image: linear-gradient(180deg, #AB0E00, 5%, rgb(53, 53, 53,0));
+    color: #FF1100;
 }
 
 h1 {
-    text-align: center;
-    padding: 4% 0;
-    font-size: 70px
-}
-
-#intro-pag h2 {
-    text-align: center;
-    margin: 1%;
+    font-size: 5.124450951683748vw;
+    padding: 5vw 0;
 }
 
 ul {
@@ -39,120 +33,80 @@ ul {
     list-style: none;
 }
 
+#intro-pag p{
+    font-size: 1.0980966325036603vw;
+    color: rgb(184, 184, 184)
+}
+
+#intro-pag p, h2 {
+    margin: 1.1vw auto;
+    width: 70%;
+}
+
 a {
     text-decoration: none;
-    color: rgb(180, 180, 180);
-    font-size: 25px;
-    padding: 1% 4%;
-    border-bottom: 5px solid transparent;
+    width: 24vw;
+    height: auto;
+    font-size: 1.8301610541727673vw;
+    color: rgb(206, 206, 206);
+    border-bottom: 2px solid transparent;
 }
 
 a:hover {
     color: rgb(255, 255, 255);
-    background-color: rgb(44, 44, 44);
-    border-color: #0015ff;
+    background-color: rgb(29, 29, 29);
+    border-color: #FF1100;
     transition-duration: 0.5s;
 }
 
-.conteudo-padrao {
-    padding: 3% 10%;
-    position: relative;
-    height: 450px;
-    letter-spacing: 1px;
+.conteudo-padrao{
+    width: 80%;
+    height: auto;
+    margin: 2% auto;
+    display: grid;
     text-align: center;
 }
 
-.conteudo-padrao h2 {
-    position: absolute;
-    color: #0015ff;
-    width: 40%;
-    right: 0;
-    padding: 2% 12%;
-    font-size: 40px;
-}
-
-.conteudo-padrao p {
-    color: rgb(204, 204, 204);
-    text-align: center;
-    position: absolute;
-    padding: 6% 12%;
-    width: 40%;
-    right: 0;
-    bottom: 0;
-    font-size: 18px;
-}
-
-img {
-    position: absolute;
-    top: 0;
-    width: 400px;
-    height: 400px;
-    margin: 4% 15% 4% 15%;
-    border: #2b2a2a solid 4px;
-    border-radius: 5%;
+img{
+    width: 31vw;
+    height: auto;
+    border: rgb(97, 97, 97) 4px solid ;
+    border-radius: 4%;
     box-shadow:
-        3.3px 2.3px 3.6px rgba(0, 0, 0, 0.048),
-        9px 6.3px 10px rgba(0, 0, 0, 0.13),
-        21.7px 15.1px 24.1px rgba(0, 0, 0, 0.172),
-        72px 50px 80px rgba(0, 0, 0, 0.19);
-
-
+  7.1px 5px 25.1px -8px rgba(0, 0, 0, 1.096),
+  14px 10px 35px -8px rgba(0, 0, 0, 1)
+;
 }
 
-/*Space Invaders*/
+#donkey_kong{
+    padding: 2vw;
+    grid-template-columns: repeat(2, 1fr);
+}
 
-#space_invaders p {
-    position: static;
-    width: 60%;
+#donkey_kong p{
+    grid-row: 2 / 4;
+}
+
+#pac_man, #super_mario_bros{
+    padding: 2vw;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#pac_man img, #super_mario_bros img, #donkey_kong img{
+    grid-row: 1 / 4;
     margin: auto;
 }
 
-#space_invaders h2 {
-    margin: auto;
-    text-align: center;
-    position: static;
-    width: 45%;
-    padding: 2% 7%;
-    font-size: 55px;
+p{
+    font-size: 1.3vw;
+    letter-spacing: 1px;
+    color: rgb(204, 204, 204);
 }
 
-/*Pac Man*/
-
-#pac_man img {
-    left: 0;
-}
-
-#pac_man_part1 {
-    top: 10%;
-}
-
-#pac_man_part2 {
-    bottom: 5%;
-}
-
-/*Donkey Kong*/
-
-
-#donkey_kong img {
-    right: 0;
-}
-
-#donkey_kong p {
-    left: 0;
-}
-
-#donkey_kong h2 {
-    left: 0;
-}
-
-/*Super Mario Bros*/
-
-#super_mario_bros img {
-    left: 0;
-}
-
-#super_mario_bros p {
-    bottom: 10%;
+h2{
+    font-size: 3.2vw;
+    width: 40vw;
+    color: #FF1100;
 }
 
 footer {
@@ -161,108 +115,6 @@ footer {
     height: 2%;
     color: #a5a4a4;
     background-color: rgb(29, 29, 29);
-}
-
-@media screen and (max-width: 1290px) {
-
-    #space_invaders h2 {
-        font-size: 40px;
-    }
-
-    .conteudo-padrao {
-        padding: 0;
-    }
-
-    .conteudo-padrao h2 {
-        padding: 1% 10%;
-        font-size: 35px;
-    }
-
-    .conteudo-padrao p {
-        padding: 2% 8%;
-        font-size: 15px;
-    }
-
-
-    img {
-        width: 350px;
-        height: 350px;
-        margin: 1% 12% 1% 12%;
-    }
-
-    #pac_man_part2 {
-        bottom: 20%;
-    }
-}
-
-@media screen and (max-width: 935px) {
-
-    .conteudo-padrao {
-        padding: 0;
-    }
-
-    .conteudo-padrao h2 {
-        padding: 0 6%;
-        font-size: 30px;
-    }
-
-    .conteudo-padrao p {
-        padding: 1% 5%;
-        font-size: 10px;
-        bottom: 50%;
-    }
-
-
-    img {
-        width: 300px;
-        height: 300px;
-        margin: 0 11%;
-    }
-
-    #pac_man_part2 {
-        bottom: 50%;
-    }
-
-    #super_mario_bros p {
-        bottom: 50%;
-    }
-
-    #space_invaders p {
-        bottom: 20%;
-    }
-}
-
-@media screen and (max-width: 935px) {
-    .conteudo-padrao {
-        position: static;
-        padding-bottom: 4%;
-    }
-
-    .conteudo-padrao h2 {
-        position: static;
-        margin: auto;
-        font-size: 35px;
-    }
-
-    .conteudo-padrao p {
-        position: static;
-        margin: auto;
-        width: 70%;
-    }
-
-    img {
-        position: static;
-        width: 200px;
-        height: 200px;
-    }
-
-    #space_invaders p {
-        position: static;
-        padding: 0;
-        width: 70%;
-        margin: auto;
-    }
-
 }
 
 ::-webkit-scrollbar {
