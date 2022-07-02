@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
 
@@ -54,13 +54,13 @@ a {
     height: auto;
     font-size: 1.8301610541727673vw;
     color: rgb(206, 206, 206);
-    border-bottom: 1vw solid transparent;
+    border-bottom: 0.3vw solid transparent;
     padding: 3px;
 }
 
 a:hover {
     color: rgb(255, 255, 255);
-    background-color: rgba(29, 29, 29, 0.815);
+    background-color: rgba(29, 29, 29, 1);
     border-color: #ff1100;
     transition-duration: 0.5s;
 }
