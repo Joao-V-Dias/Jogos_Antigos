@@ -1,25 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     overflow-x: hidden;
 }
 
-body{
+body {
     background-color: #0d1c2c;
+    text-align: center;
 }
 
-#intro-pag h2{font-size: 1.610541727672035vw;}
+#intro-pag h2 {
+    font-size: 1.6vw;
+}
 
 #intro-pag {
     width: 100vw;
     height: auto;
-    text-align: center;
-    background-image: linear-gradient(180deg, #AB0E00, 5%, rgb(53, 53, 53,0));
-    color: #FF1100;
+    background-image: linear-gradient(180deg, #ab0e00, 5%, rgb(53, 53, 53, 0));
+    color: #ff1100;
 }
 
 h1 {
@@ -33,12 +35,15 @@ ul {
     list-style: none;
 }
 
-#intro-pag p{
+#intro-pag p,
+footer {
     font-size: 1.0980966325036603vw;
-    color: rgb(184, 184, 184)
+    color: rgb(184, 184, 184);
+    padding: 1vw;
 }
 
-#intro-pag p, h2 {
+#intro-pag p,
+h2 {
     margin: 1.1vw auto;
     width: 70%;
 }
@@ -49,72 +54,80 @@ a {
     height: auto;
     font-size: 1.8301610541727673vw;
     color: rgb(206, 206, 206);
-    border-bottom: 2px solid transparent;
+    border-bottom: 1vw solid transparent;
+    padding: 3px;
 }
 
 a:hover {
     color: rgb(255, 255, 255);
-    background-color: rgb(29, 29, 29);
-    border-color: #FF1100;
+    background-color: rgba(29, 29, 29, 0.815);
+    border-color: #ff1100;
     transition-duration: 0.5s;
 }
 
-.conteudo-padrao{
+.conteudo-padrao {
     width: 80%;
     height: auto;
     margin: 2% auto;
     display: grid;
-    text-align: center;
 }
 
-img{
+img {
     width: 31vw;
     height: auto;
-    border: rgb(97, 97, 97) 4px solid ;
+    border: rgb(97, 97, 97) 0.29vw solid;
     border-radius: 4%;
-    box-shadow:
-  7.1px 5px 25.1px -8px rgba(0, 0, 0, 1.096),
-  14px 10px 35px -8px rgba(0, 0, 0, 1)
-;
+    grid-row: 1 / 4;
+    margin: auto;
+    box-shadow: 13px 1.4px 2.8px rgba(0, 0, 0, 0.3), 10px 11px 1.6vw rgba(0, 0, 0, 0.79);
 }
 
-#donkey_kong{
-    padding: 2vw;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-#donkey_kong p{
+#donkey_kong p {
     grid-row: 2 / 4;
 }
 
-#pac_man, #super_mario_bros{
+#pac_man,
+#super_mario_bros,
+#donkey_kong {
     padding: 2vw;
     grid-template-columns: repeat(2, 1fr);
 }
 
-#pac_man img, #super_mario_bros img, #donkey_kong img{
-    grid-row: 1 / 4;
-    margin: auto;
-}
-
-p{
+p {
     font-size: 1.3vw;
     letter-spacing: 1px;
     color: rgb(204, 204, 204);
 }
 
-h2{
+h2 {
     font-size: 3.2vw;
     width: 40vw;
-    color: #FF1100;
+    color: #ff1100;
 }
 
 footer {
-    text-align: center;
-    padding: 1%;
-    height: 2%;
-    color: #a5a4a4;
-    background-color: rgb(29, 29, 29);
+    background-color: #09131d;
+}
+
+@media (max-width:800px) {
+
+    .conteudo-padrao p, #intro-pag p, footer{font-size: 2.7vw;}
+
+    h1{font-size: 7vw;}
+
+    h2, #intro-pag h2{font-size: 5vw;}
+
+    ul {display: flex; flex-wrap: wrap;}
+
+    a{font-size: 4vw; width: 100vw;}
+
+    #pac_man, #super_mario_bros, #donkey_kong {grid-template-columns: 1fr;}
+
+    img {
+        grid-row: auto;
+        width: 70vw;
+        margin: 5vw auto;
+    }
 }
 
 ::-webkit-scrollbar {
