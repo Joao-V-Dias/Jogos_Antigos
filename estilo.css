@@ -4,13 +4,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
 
 body {
     background-color: #0d1c2c;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 #intro-pag h2 {
