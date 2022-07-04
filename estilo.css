@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-    font-size: 5.124450951683748vw;
+    font-size: 5.12vw;
     padding: 5vw 0;
 }
 
@@ -36,7 +36,7 @@ ul {
 
 #intro-pag p,
 footer {
-    font-size: 1.0980966325036603vw;
+    font-size: 1.1vw;
     color: rgb(184, 184, 184);
     padding: 1vw;
 }
@@ -51,7 +51,7 @@ a {
     text-decoration: none;
     width: 24vw;
     height: auto;
-    font-size: 1.8301610541727673vw;
+    font-size: 1.9vw;
     color: rgb(206, 206, 206);
     border-bottom: 0.3vw solid transparent;
     padding: 3px;
